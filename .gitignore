@@ -3,3 +3,4 @@ venv
 *.wav
 *.pyc
 source_code/__pycache__
+datasets
