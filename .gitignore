@@ -1,3 +1,5 @@
 venv
 *.gmm
 *.wav
+*.pyc
+source_code/__pycache__
