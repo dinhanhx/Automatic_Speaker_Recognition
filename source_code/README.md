@@ -17,7 +17,7 @@ All .wav files must be normalized and standardized.
 
 ## Create folder
 
-Create a folder in `source_code` folder with your name such as `VDA` folder. This will be where you will train your own model.
+Create a folder in `source_code` folder with your name such as `VDA` folder. This will be where you will train your own model. Also where you keep your own source code as a proof that you have done something.
 
 ## Carry out
 
@@ -49,3 +49,9 @@ audio_file_path = 'NNDH_1.wav'
 # Run this function to try out your model
 print(try_personal_GMM(audio_file_path, model_path))
 ```
+
+## Note:
+
+Remember to push your code to this repos.
+
+Remember to update your model and wav files to Google Drive.
