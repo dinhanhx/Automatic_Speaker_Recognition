@@ -25,7 +25,7 @@ Let assume you have script called `train_model.py` in your folder.
 
 In `train_model.py`
 ```Python
-import os
+import sys
 sys.path.append('../') # To import all python files in `source_code` folder.
 from mfcc_gmm_func import * # To import functions that you need
 ```
