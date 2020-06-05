@@ -1,5 +1,5 @@
 from scipy.io import wavfile
-from python_speech_features import mfcc, data
+from python_speech_features import mfcc, delta
 from sklearn import preprocessing  # Normalization for numerical data
 import numpy as np
 from sklearn.mixture import GMM  # Gaussian Mixture model
