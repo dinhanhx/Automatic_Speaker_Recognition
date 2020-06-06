@@ -3,9 +3,9 @@ sys.path.append('../') # To import all python files in `source_code` folder.
 from mfcc_gmm_func import * # To import functions that you need
 
 import glob
-audio_file_path_list = glob.glob('../../datasets/NNDH/*.wav')
+audio_file_path_list = glob.glob('../../datasets/TQD/*.wav')
 
-model_path = 'NNDH.gmm'
+model_path = 'TQD.gmm'
 
 generate_GMM(audio_file_path_list, model_path)
 

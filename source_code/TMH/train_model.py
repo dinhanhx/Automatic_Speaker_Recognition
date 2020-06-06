@@ -10,5 +10,5 @@ model_path = 'TMH.gmm'
 
 generate_GMM(audio_file_path_list, model_path)
 
-for audio_file_path in audio_file_path_list:
-    print(try_personal_GMM(audio_file_path, model_path))
+# for audio_file_path in audio_file_path_list:
+#     print(try_personal_GMM(audio_file_path, model_path))
