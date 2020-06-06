@@ -3,4 +3,5 @@ venv
 *.wav
 *.pyc
 source_code/__pycache__
+source_code/models
 datasets
