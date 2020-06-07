@@ -1,7 +1,7 @@
 from mfcc_gmm_func import *
 from random import shuffle
 
-names = ['VDA', 'NNDH', 'NQT', 'LHQ', 'TQD', 'LHN', 'TMH']
+names = ['VDA', 'NNDH', 'NQT', 'LHQ', 'TQD', 'LHN', 'TMH', 'DGL']
 # Train models
 for name in names:
     audio_fpath_list = []
@@ -32,7 +32,7 @@ for name in names:
         for model_path in model_path_list:
             scores.append(round(try_personal_GMM(audio_fpath, model_path), 5))
 
-        if name != names[score.index(max(scores))]:
+        if name != names[scores.index(max(scores))]:
             miss = miss + 1
         else:
             hit = hit + 1
