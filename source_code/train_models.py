@@ -20,6 +20,8 @@ for name in names:
 
 
 # For testing models
+total_miss = 0
+total_hit = 0
 for name in names:
     miss = 0
     hit = 0
@@ -37,8 +39,14 @@ for name in names:
 
         if name != names[scores.index(max(scores))]:
             miss = miss + 1
+            total_miss = total_miss + miss
         else:
             hit = hit + 1
+            total_hit = total_hit + hit
 
 
     print('Test with .wav files of ' + name + '. System miss: ' + str(miss) + '. System hit: ' + str(hit))
+
+
+accuracy = (total_hit/(total_hit+total_miss))*100
+print('Accuray: '+str(round(accuracy,5))+'%')
