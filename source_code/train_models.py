@@ -2,15 +2,18 @@ from mfcc_gmm_func import *
 from random import shuffle
 
 names = ['VDA', 'NNDH', 'NQT', 'LHQ', 'TQD', 'LHN', 'TMH', 'DGL']
+model_type = 'high'
+test_type = 'high'
+
 # Train models
 for name in names:
     audio_fpath_list = []
     for i in range(1, 101):
-        audio_fpath = '../datasets/high/' + name + '/' + name + '_' + str(i) + '.wav'
+        audio_fpath = '../datasets/'+model_type+'/'+name+'/'+name+'_'+str(i)+'.wav'
         audio_fpath_list.append(audio_fpath)
 
 
-    model_path = 'models/high/' + name + '.gmm'
+    model_path = 'models/'+model_type+'/' + name + '.gmm'
     shuffle(audio_fpath_list)
     generate_GMM(audio_fpath_list, model_path)
     print(model_path)
@@ -22,11 +25,11 @@ for name in names:
     hit = 0
     audio_fpath_list = []
     for i in range(101, 136):
-        audio_fpath = '../datasets/high/' + name + '/' + name + '_' + str(i) + '.wav'
+        audio_fpath = '../datasets/'+test_type+'/' + name + '/' + name + '_' + str(i) + '.wav'
         audio_fpath_list.append(audio_fpath)
 
 
-    model_path_list = ['models/high/' + name + '.gmm' for name in names]
+    model_path_list = ['models/'+model_type+'/' + name + '.gmm' for name in names]
     for audio_fpath in audio_fpath_list:
         scores = []
         for model_path in model_path_list:
