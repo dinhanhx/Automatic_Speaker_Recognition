@@ -68,3 +68,13 @@ To have clear view of folders and files
 +--README.md
 +--.gitignore
 ```
+
+## Group's member
+- [Vu Dinh Anh](https://github.com/dinhanhx)
+- [Ngo Ngoc Duc Huy](https://github.com/Huy-Ngo)
+- [Nguyen Quoc Thong](https://github.com/NhacBatQuan)
+- [Le Huy Quang](https://github.com/quangLH195)
+- [Trinh Quoc Dat](https://github.com/TrinhQuocDat99du)
+- [Luu Hai Nam](https://github.com/namluu25)
+- [Tran Minh Hieu](https://github.com/pcranger)
+- [Dinh Gia Luong](https://github.com/gialuong2801)
