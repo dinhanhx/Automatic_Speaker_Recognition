@@ -35,7 +35,7 @@ Plan:
   - Train models with `Sunday_datasets/high` folder.
   - Then test each system of models on `Sunday_datasets/mix`, `Sunday_datasets/low`, `Sunday_datasets/high` folders.
 
-Read our [report]() for more details.
+Read our [report](https://www.overleaf.com/read/pvgxhcmffyfc) for more details.
 
 ## Project structure
 To have clear view of folders and files
