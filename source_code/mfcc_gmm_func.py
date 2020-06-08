@@ -14,7 +14,7 @@ def get_mfcc_feat(audio_file_path):
     rate, audio = wavfile.read(audio_file_path)
     # Extracting features (MFCCs) from the audio
     mfcc_feature = mfcc(audio, rate, winlen=0.05, winstep=0.05,
-                        numcep=5, nfilt=30, nfft=512, appendEnergy=True)
+                        numcep=5, nfilt=30, winfunc=np.hamming)
     mfcc_feature = preprocessing.scale(mfcc_feature)
     deltas = delta(mfcc_feature, 2)  # enrich the feature
     double_deltas = delta(deltas, 2)
